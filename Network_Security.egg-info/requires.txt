@@ -1,10 +1,8 @@
-pandas 
-numpy 
+pandas
+numpy
 Flask
 matplotlib
 seaborn
 python-dotenv
 pymongo
 certifi
-
--e .
