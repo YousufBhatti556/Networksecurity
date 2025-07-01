@@ -1,0 +1,2 @@
+[ 2025-07-01 07:11:11,809 ] - 17 - INFO - Entered the try block
+[ 2025-07-01 07:11:11,809 ] - 20 - INFO - error occured in python script [D:\Network Security\networksecurity\exceptionhandling\exception_handling.py] line number [18] error message [division by zero]
