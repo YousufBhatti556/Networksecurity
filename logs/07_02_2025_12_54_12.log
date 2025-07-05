@@ -1,0 +1,1 @@
+[ 2025-07-02 12:54:18,249 ] - 33 - INFO - error occured in python script [D:\Network Security\push_data.py] line number [28] error message [module 'pandas' has no attribute 'read']
