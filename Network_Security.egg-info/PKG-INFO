@@ -10,7 +10,9 @@ Requires-Dist: matplotlib
 Requires-Dist: seaborn
 Requires-Dist: python-dotenv
 Requires-Dist: pymongo
+Requires-Dist: pymongo[srv]
 Requires-Dist: certifi
+Requires-Dist: scikit-learn
 Dynamic: author
 Dynamic: author-email
 Dynamic: requires-dist

@@ -5,7 +5,9 @@ matplotlib
 seaborn
 python-dotenv
 pymongo
-pymongo[srv]
+pymongo
 certifi
+scikit-learn
+dotenv
 
--e .
+# -e .
