@@ -1,6 +1,7 @@
 from networksecurity.entity.config_entity import DataIngestionConfig, TrainingPipelineConfig
 from networksecurity.exeptionhandling.exception_handling import NetworkSecurityException
 from networksecurity.logging.logger import logging
+from networksecurity.entity.artifact_entity import Artifact_entity
 import pandas as pd
 import numpy as np
 import os, sys
@@ -27,7 +28,7 @@ class Data_ingestion:
             self.mongo_client = pymongo.MongoClient(MONGO_DB_URL)
             collection = self.mongo_client[db_name][collection_name]
             df = pd.DataFrame(list(collection.find()))
-            if "_id" in df.columns().to_list():
+            if "_id" in df.columns.to_list():
                 df.drop(columns="_id", axis=1, inplace=True)
             df.replace({"na":np.nan})
             return df
@@ -52,6 +53,12 @@ class Data_ingestion:
             train_data, test_data = train_test_split(df, test_size=self.data_ingestion_config.train_test_split_ratio, random_state=42)
             logging.info("Spliiting the data as train and test set ended")
 
+            train_dir = os.path.dirname(self.data_ingestion_config.training_file_path)
+            test_dir = os.path.dirname(self.data_ingestion_config.test_file_path)
+
+            os.makedirs(train_dir, exist_ok=True)
+            os.makedirs(test_dir, exist_ok=True)
+
             logging.info("Exporting train and test file path")
             train_data.to_csv(self.data_ingestion_config.training_file_path, index=False, header=True)
             test_data.to_csv(self.data_ingestion_config.test_file_path, index=False, header=True)
@@ -68,7 +75,9 @@ class Data_ingestion:
             df = self.get_dataframe_from_collection()
             df = self.export_collection_to_csv(df)
             self.split_data_as_train_test(df)
-            
+            data_ingestion_artifact = Artifact_entity(trained_file_pah=self.data_ingestion_config.training_file_path,
+                                                       test_file_pah=self.data_ingestion_config.test_file_path)
+            return data_ingestion_artifact
         except Exception as e:
             logging.info(NetworkSecurityException(e,sys))
             raise NetworkSecurityException(e,sys)

@@ -8,8 +8,8 @@ class TrainingPipelineConfig:
         self.timestamp = timestamp.strftime("%m_%d_%Y_%H_%M_%S")
         self.pipeline_name = training_pipeline.PIPELINENAME
         self.artifact_name = training_pipeline.ARTIFACT_DIR
-        self.artifact_dir = os.path.join(self.artifact_name, timestamp)
-        self.timestamp = str(timestamp)
+        self.artifact_dir = os.path.join(self.artifact_name, self.timestamp)
+        
 
 class DataIngestionConfig:
     def __init__(self, trainingpipelineconfig: TrainingPipelineConfig):

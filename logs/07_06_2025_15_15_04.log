@@ -1,0 +1,7 @@
+[ 2025-07-06 15:15:06,192 ] - 71 - INFO - Started data ingestion
+[ 2025-07-06 15:26:13,811 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-06 15:26:13,827 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-06 15:26:13,831 ] - 59 - INFO - Exporting train and test file path
+[ 2025-07-06 15:26:13,831 ] - 66 - INFO - error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [60] error message [[Errno 13] Permission denied: 'Artifacts\\07_06_2025_15_15_04\\data_ingestion\\ingested\\train.csv']
+[ 2025-07-06 15:26:13,831 ] - 79 - INFO - error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [74] error message [error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [60] error message [[Errno 13] Permission denied: 'Artifacts\\07_06_2025_15_15_04\\data_ingestion\\ingested\\train.csv']]
+[ 2025-07-06 15:26:13,831 ] - 16 - INFO - error occured in python script [D:\Network Security\main.py] line number [13] error message [error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [74] error message [error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [60] error message [[Errno 13] Permission denied: 'Artifacts\\07_06_2025_15_15_04\\data_ingestion\\ingested\\train.csv']]]
