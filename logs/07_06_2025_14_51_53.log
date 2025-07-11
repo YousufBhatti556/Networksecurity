@@ -1,1 +1,0 @@
-[ 2025-07-06 14:51:57,083 ] - 16 - INFO - error occured in python script [D:\Network Security\main.py] line number [10] error message [join() argument must be str, bytes, or os.PathLike object, not 'datetime']

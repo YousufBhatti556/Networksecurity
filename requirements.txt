@@ -9,5 +9,5 @@ pymongo
 certifi
 scikit-learn
 dotenv
-
+pyaml
 # -e .

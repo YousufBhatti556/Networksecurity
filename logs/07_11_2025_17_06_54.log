@@ -1,0 +1,7 @@
+[ 2025-07-11 17:06:58,699 ] - 74 - INFO - Started data ingestion
+[ 2025-07-11 17:07:10,890 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-11 17:07:10,907 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-11 17:07:10,907 ] - 62 - INFO - Exporting train and test file path
+[ 2025-07-11 17:07:11,499 ] - 65 - INFO - Exported train and test file path
+[ 2025-07-11 17:07:11,530 ] - 103 - INFO - error occured in python script [D:\Network Security\networksecurity\components\data_validation.py] line number [75] error message [DataValidation.read_data() missing 1 required positional argument: 'self']
+[ 2025-07-11 17:07:11,530 ] - 22 - INFO - error occured in python script [D:\Network Security\main.py] line number [19] error message [error occured in python script [D:\Network Security\networksecurity\components\data_validation.py] line number [75] error message [DataValidation.read_data() missing 1 required positional argument: 'self']]

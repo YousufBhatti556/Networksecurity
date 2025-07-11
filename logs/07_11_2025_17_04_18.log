@@ -1,0 +1,7 @@
+[ 2025-07-11 17:04:22,366 ] - 74 - INFO - Started data ingestion
+[ 2025-07-11 17:04:31,900 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-11 17:04:31,909 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-11 17:04:31,917 ] - 62 - INFO - Exporting train and test file path
+[ 2025-07-11 17:04:32,587 ] - 65 - INFO - Exported train and test file path
+[ 2025-07-11 17:04:32,587 ] - 82 - INFO - error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [78] error message [Data_Ingestion_Artifact.__init__() got an unexpected keyword argument 'trained_file_pah']
+[ 2025-07-11 17:04:32,587 ] - 22 - INFO - error occured in python script [D:\Network Security\main.py] line number [15] error message [error occured in python script [D:\Network Security\networksecurity\components\dataingestion.py] line number [78] error message [Data_Ingestion_Artifact.__init__() got an unexpected keyword argument 'trained_file_pah']]

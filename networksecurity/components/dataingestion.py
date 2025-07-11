@@ -1,7 +1,7 @@
 from networksecurity.entity.config_entity import DataIngestionConfig, TrainingPipelineConfig
 from networksecurity.exeptionhandling.exception_handling import NetworkSecurityException
 from networksecurity.logging.logger import logging
-from networksecurity.entity.artifact_entity import Artifact_entity
+from networksecurity.entity.artifact_entity import Data_Ingestion_Artifact
 import pandas as pd
 import numpy as np
 import os, sys
@@ -69,14 +69,14 @@ class Data_ingestion:
             logging.info(NetworkSecurityException(e,sys))
             raise NetworkSecurityException(e,sys)
 
-    def initiate_data_ingestion(self):
+    def initiate_data_ingestion(self)-> Data_Ingestion_Artifact:
         try:
             logging.info("Started data ingestion")
             df = self.get_dataframe_from_collection()
             df = self.export_collection_to_csv(df)
             self.split_data_as_train_test(df)
-            data_ingestion_artifact = Artifact_entity(trained_file_pah=self.data_ingestion_config.training_file_path,
-                                                       test_file_pah=self.data_ingestion_config.test_file_path)
+            data_ingestion_artifact =Data_Ingestion_Artifact(trained_file_path=self.data_ingestion_config.training_file_path,
+                                                       test_file_path=self.data_ingestion_config.test_file_path)
             return data_ingestion_artifact
         except Exception as e:
             logging.info(NetworkSecurityException(e,sys))
