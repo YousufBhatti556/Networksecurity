@@ -48,7 +48,7 @@ class ExtractNetworkData:
 
 if __name__ == "__main__":
     obj = ExtractNetworkData()
-    FILE_PATH = r"NetworkData/Phising_data.csv"
+    FILE_PATH = r"NetworkData/phisingData.csv"
     db_name = "yousufbhatti99"
     collection_name = "NETWORKDATA"
     data = obj.csv_to_json(FILE_PATH)

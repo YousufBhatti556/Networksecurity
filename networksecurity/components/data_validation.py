@@ -71,10 +71,13 @@ class DataValidation:
             test_data = self.read_data(file_path=test_file_path)
 
             if not self.validate_num_of_columns(train_data):
-                raise NetworkSecurityException("Train dataframe does not have all the expected columns", sys)
+                logging.info("Train dataframe does not have all the expected columns")
+                return "Train dataframe does not have all the expected columns"
 
             if not self.validate_num_of_columns(test_data):
-                raise NetworkSecurityException("Test dataframe does not have all the expected columns", sys)
+
+                logging.info("Test dataframe does not have all the expected columns")
+                return "Test dataframe does not have all the expected columns"
 
             status = self.detect_drift(base_df=train_data, current_df=test_data)
 
