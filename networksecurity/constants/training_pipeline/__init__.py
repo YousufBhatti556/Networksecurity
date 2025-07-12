@@ -16,8 +16,18 @@ SCHEMA_FILE_PATH = os.path.join("data_schema", "schema.yaml")
 DATA_VALIDATION_DIR_NAME = "data_validation"
 DATA_VALIDATION_VALID_DIR = "valid"
 DATA_VALIDATION_INVALID_DIR = "invalid"
-DATA_VALIDATION_DRIFT_REPORT_DIR = "drift_report"
+DATA_VALIDATION_DRIFT_REPORT_DIR = "drift_report" 
 DATA_VALIDATION_DRIFT_REPORT_NAME = "report.yaml" 
+
+DATA_TRANSFORMATION_DIR_NAME = "data_transformation"
+DATA_TRANSFORMATION_TRANSFORMED_DATA_DIR_NAME = "data_transformed"
+DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR_NAME = 'object_transformed'
+DATA_TRANSFORMATION_PREPROCESSING_OBJ_FILE_NAME = "preprocessor.pkl"
+DATA_TRANSFORMATION_IMPUTER_PARAMS:dict = {
+    "missing_values":np.nan,
+    "n_neighbours":3,
+    "weights":"uniform"
+}
 
 
 TARGET_COLUMN = "Result"
