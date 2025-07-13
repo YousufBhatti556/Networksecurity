@@ -1,7 +1,0 @@
-[ 2025-07-13 01:38:16,983 ] - 74 - INFO - Started data ingestion
-[ 2025-07-13 01:39:48,781 ] - 52 - INFO - Spliiting the data as train and test set started
-[ 2025-07-13 01:39:48,811 ] - 54 - INFO - Spliiting the data as train and test set ended
-[ 2025-07-13 01:39:48,812 ] - 62 - INFO - Exporting train and test file path
-[ 2025-07-13 01:39:50,143 ] - 65 - INFO - Exported train and test file path
-[ 2025-07-13 01:39:50,355 ] - 33 - INFO - Expected columns: 31, Found: 81
-[ 2025-07-13 01:39:50,355 ] - 74 - INFO - Train dataframe does not have all the expected columns

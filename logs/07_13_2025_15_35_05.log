@@ -1,0 +1,12 @@
+[ 2025-07-13 15:35:07,668 ] - 74 - INFO - Started data ingestion
+[ 2025-07-13 15:37:16,540 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-13 15:37:16,540 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-13 15:37:16,540 ] - 62 - INFO - Exporting train and test file path
+[ 2025-07-13 15:37:16,618 ] - 65 - INFO - Exported train and test file path
+[ 2025-07-13 15:37:16,692 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-13 15:37:16,693 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-13 15:37:16,849 ] - 45 - INFO - Started the data transformation
+[ 2025-07-13 15:37:16,911 ] - 49 - INFO - Separating input and output features
+[ 2025-07-13 15:37:16,916 ] - 32 - INFO - Entered the get_data_transformer_object function
+[ 2025-07-13 15:37:16,926 ] - 62 - INFO - Transformation on train and test input features done.
+[ 2025-07-13 15:37:16,928 ] - 66 - INFO - Saving array and preprocessor object

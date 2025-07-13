@@ -11,7 +11,7 @@ def read_yaml_file(file_path):
     except Exception as e:
         logging.info(NetworkSecurityException(e, sys))
         raise NetworkSecurityException(e, sys)
-    
+
 def write_yaml_file(file_path: str, content, replace: bool = True):
     try:
         if replace and os.path.exists(file_path):
@@ -22,17 +22,21 @@ def write_yaml_file(file_path: str, content, replace: bool = True):
     except Exception as e:
         logging.info(NetworkSecurityException(e, sys))
         raise NetworkSecurityException(e, sys)
-    
-def save_data_to_array(file_path:str, array:np.array):
+
+def save_data_to_array(file_path: str, array: np.ndarray):
     try:
+        # Fix: Ensure parent directory exists
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, "wb") as file:
             np.save(file, array)
     except Exception as e:
         logging.info(NetworkSecurityException(e, sys))
         raise NetworkSecurityException(e, sys)
-    
-def save_obj_to_pickle_file(file_path:str, obj:object):
+
+def save_obj_to_pickle_file(file_path: str, obj: object):
     try:
+        # Fix: Ensure parent directory exists
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
         with open(file_path, "wb") as file:
             pickle.dump(obj, file)
     except Exception as e:

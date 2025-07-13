@@ -25,7 +25,7 @@ DATA_TRANSFORMATION_TRANSFORMED_OBJECT_DIR_NAME = 'object_transformed'
 DATA_TRANSFORMATION_PREPROCESSING_OBJ_FILE_NAME = "preprocessor.pkl"
 DATA_TRANSFORMATION_IMPUTER_PARAMS:dict = {
     "missing_values":np.nan,
-    "n_neighbours":3,
+    "n_neighbors":3,
     "weights":"uniform"
 }
 

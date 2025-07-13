@@ -1,7 +1,0 @@
-[ 2025-07-11 22:49:47,938 ] - 74 - INFO - Started data ingestion
-[ 2025-07-11 22:50:06,859 ] - 52 - INFO - Spliiting the data as train and test set started
-[ 2025-07-11 22:50:06,859 ] - 54 - INFO - Spliiting the data as train and test set ended
-[ 2025-07-11 22:50:06,874 ] - 62 - INFO - Exporting train and test file path
-[ 2025-07-11 22:50:07,197 ] - 65 - INFO - Exported train and test file path
-[ 2025-07-11 22:50:07,331 ] - 33 - INFO - Expected columns: 50, Found: 50
-[ 2025-07-11 22:50:07,331 ] - 33 - INFO - Expected columns: 50, Found: 50

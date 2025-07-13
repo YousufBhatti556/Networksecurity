@@ -1,9 +1,0 @@
-[ 2025-07-11 22:48:04,304 ] - 74 - INFO - Started data ingestion
-[ 2025-07-11 22:48:47,533 ] - 52 - INFO - Spliiting the data as train and test set started
-[ 2025-07-11 22:48:47,548 ] - 54 - INFO - Spliiting the data as train and test set ended
-[ 2025-07-11 22:48:47,548 ] - 62 - INFO - Exporting train and test file path
-[ 2025-07-11 22:48:47,873 ] - 65 - INFO - Exported train and test file path
-[ 2025-07-11 22:48:48,021 ] - 33 - INFO - Expected columns: 50, Found: 50
-[ 2025-07-11 22:48:48,021 ] - 33 - INFO - Expected columns: 50, Found: 50
-[ 2025-07-11 22:48:48,471 ] - 93 - INFO - error occured in python script [D:\Network Security\networksecurity\components\data_validation.py] line number [84] error message [Data_Validation_Artifact.__init__() got an unexpected keyword argument 'status']
-[ 2025-07-11 22:48:48,471 ] - 22 - INFO - error occured in python script [D:\Network Security\main.py] line number [19] error message [error occured in python script [D:\Network Security\networksecurity\components\data_validation.py] line number [84] error message [Data_Validation_Artifact.__init__() got an unexpected keyword argument 'status']]
