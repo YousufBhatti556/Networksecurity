@@ -67,6 +67,7 @@ class Data_Transformation:
             save_data_to_array(self.data_transformation_config.train_data_transformed_dir, train_arr)
             save_data_to_array(self.data_transformation_config.test_data_transformed_dir, test_arr)
             save_obj_to_pickle_file(self.data_transformation_config.transformed_obj_dir, preprocessor_obj)
+            save_obj_to_pickle_file("final_models/preprocessor.pkl", preprocessor_obj)
 
             return Data_Transformation_Artifacts(transformed_train_file_path=self.data_transformation_config.train_data_transformed_dir,
                                                  transformed_test_file_path=self.data_transformation_config.test_data_transformed_dir,

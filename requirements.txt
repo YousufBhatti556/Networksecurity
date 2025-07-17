@@ -11,4 +11,5 @@ scikit-learn
 dotenv
 pyaml
 mlflow
+dagshub
 # -e .

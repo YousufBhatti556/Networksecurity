@@ -1,0 +1,22 @@
+[ 2025-07-17 15:21:59,460 ] - 74 - INFO - Started data ingestion
+[ 2025-07-17 15:23:42,632 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-17 15:23:42,648 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-17 15:23:42,648 ] - 62 - INFO - Exporting train and test file path
+[ 2025-07-17 15:23:42,786 ] - 65 - INFO - Exported train and test file path
+[ 2025-07-17 15:23:42,899 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-17 15:23:42,899 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-17 15:23:43,224 ] - 45 - INFO - Started the data transformation
+[ 2025-07-17 15:23:43,333 ] - 49 - INFO - Separating input and output features
+[ 2025-07-17 15:23:43,340 ] - 32 - INFO - Entered the get_data_transformer_object function
+[ 2025-07-17 15:23:43,348 ] - 62 - INFO - Transformation on train and test input features done.
+[ 2025-07-17 15:23:43,348 ] - 66 - INFO - Saving array and preprocessor object
+[ 2025-07-17 15:23:43,380 ] - 128 - INFO - Getting train and test arrays file path
+[ 2025-07-17 15:23:43,380 ] - 132 - INFO - Loading train and test array
+[ 2025-07-17 15:23:43,396 ] - 136 - INFO - Separating independent and dependent variables
+[ 2025-07-17 15:23:43,396 ] - 140 - INFO - Training model
+[ 2025-07-17 15:31:47,751 ] - 87 - INFO - Evaluate model function done
+[ 2025-07-17 15:31:47,751 ] - 92 - INFO - Got the best model.
+[ 2025-07-17 15:31:47,845 ] - 96 - INFO - Tracking the experiment for train classification metrics
+[ 2025-07-17 15:31:47,907 ] - 100 - INFO - Tracking the experiment for train classification metrics
+[ 2025-07-17 15:31:47,907 ] - 103 - INFO - Got ClassificationMetricArtifact
+[ 2025-07-17 15:31:47,907 ] - 106 - INFO - Loading preprocessor object

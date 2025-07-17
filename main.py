@@ -5,7 +5,7 @@ from networksecurity.entity.artifact_entity import Data_Ingestion_Artifact, Data
 from networksecurity.components.dataingestion import Data_ingestion
 from networksecurity.components.data_validation import DataValidation
 from networksecurity.components.datatransformation import Data_Transformation
-from networksecurity.components.modeltraining import Model_Training
+from networksecurity.components.model_training import Model_Training
 import sys
 
 

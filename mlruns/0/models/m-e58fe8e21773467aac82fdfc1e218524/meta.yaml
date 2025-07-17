@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Network%20Security/mlruns/0/models/m-e58fe8e21773467aac82fdfc1e218524/artifacts
+creation_timestamp: 1752747667928
+experiment_id: '0'
+last_updated_timestamp: 1752747672049
+model_id: m-e58fe8e21773467aac82fdfc1e218524
+model_type: null
+name: model
+source_run_id: 7c2d535e8d334e219e016937d98d6b5e
+status: 2
+status_message: null
