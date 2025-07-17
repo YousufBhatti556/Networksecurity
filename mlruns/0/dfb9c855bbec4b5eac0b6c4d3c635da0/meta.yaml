@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Network%20Security/mlruns/0/dfb9c855bbec4b5eac0b6c4d3c635da0/artifacts
+end_time: 1752663180824
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dfb9c855bbec4b5eac0b6c4d3c635da0
+run_name: burly-roo-827
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1752663161596
+status: 3
+tags: []
+user_id: CC

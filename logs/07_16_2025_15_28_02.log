@@ -1,0 +1,22 @@
+[ 2025-07-16 15:28:07,277 ] - 74 - INFO - Started data ingestion
+[ 2025-07-16 15:28:18,329 ] - 52 - INFO - Spliiting the data as train and test set started
+[ 2025-07-16 15:28:18,329 ] - 54 - INFO - Spliiting the data as train and test set ended
+[ 2025-07-16 15:28:18,329 ] - 62 - INFO - Exporting train and test file path
+[ 2025-07-16 15:28:18,408 ] - 65 - INFO - Exported train and test file path
+[ 2025-07-16 15:28:18,493 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-16 15:28:18,493 ] - 33 - INFO - Expected columns: 31, Found: 31
+[ 2025-07-16 15:28:18,643 ] - 45 - INFO - Started the data transformation
+[ 2025-07-16 15:28:18,701 ] - 49 - INFO - Separating input and output features
+[ 2025-07-16 15:28:18,721 ] - 32 - INFO - Entered the get_data_transformer_object function
+[ 2025-07-16 15:28:18,734 ] - 62 - INFO - Transformation on train and test input features done.
+[ 2025-07-16 15:28:18,735 ] - 66 - INFO - Saving array and preprocessor object
+[ 2025-07-16 15:28:18,742 ] - 128 - INFO - Getting train and test arrays file path
+[ 2025-07-16 15:28:18,743 ] - 132 - INFO - Loading train and test array
+[ 2025-07-16 15:28:18,756 ] - 136 - INFO - Separating independent and dependent variables
+[ 2025-07-16 15:28:18,756 ] - 140 - INFO - Training model
+[ 2025-07-16 15:33:37,138 ] - 87 - INFO - Evaluate model function done
+[ 2025-07-16 15:33:37,138 ] - 92 - INFO - Got the best model.
+[ 2025-07-16 15:33:37,216 ] - 96 - INFO - Tracking the experiment for train classification metrics
+[ 2025-07-16 15:33:37,216 ] - 123 - INFO - error occured in python script [D:\Network Security\networksecurity\components\modeltraining.py] line number [97] error message [Model_Training.track_ml_flow() takes 2 positional arguments but 3 were given]
+[ 2025-07-16 15:33:37,216 ] - 145 - INFO - error occured in python script [D:\Network Security\networksecurity\components\modeltraining.py] line number [141] error message [error occured in python script [D:\Network Security\networksecurity\components\modeltraining.py] line number [97] error message [Model_Training.track_ml_flow() takes 2 positional arguments but 3 were given]]
+[ 2025-07-16 15:33:37,216 ] - 32 - INFO - error occured in python script [D:\Network Security\main.py] line number [29] error message [error occured in python script [D:\Network Security\networksecurity\components\modeltraining.py] line number [141] error message [error occured in python script [D:\Network Security\networksecurity\components\modeltraining.py] line number [97] error message [Model_Training.track_ml_flow() takes 2 positional arguments but 3 were given]]]
