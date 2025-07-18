@@ -44,7 +44,7 @@ class Training_Pipeline:
         try:
             self.data_transformation_config = DataTransformationConfig(trainingpipelineconfig=self.training_pipeline_config)
             logging.info("Data transformation started")
-            data_transformation = Data_Transformation(data_transformation_config=self.data_ingestion_config, data_validation_artifact=data_validation_artifacts)
+            data_transformation = Data_Transformation(data_transformation_config=self.data_transformation_config, data_validation_artifact=data_validation_artifacts)
             data_transformation_artifacts = data_transformation.initiate_data_transformation()
             logging.info("Data transformation completed")
             logging.info(f"Data transformation artifacts {data_transformation_artifacts}")
