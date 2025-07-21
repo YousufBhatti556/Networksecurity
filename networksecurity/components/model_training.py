@@ -18,6 +18,11 @@ from sklearn.svm import SVC
 from sklearn.metrics import r2_score
 from sklearn.model_selection import GridSearchCV
 import mlflow
+import dagshub
+dagshub.init(
+    repo_owner=os.getenv("DAGSHUB_USERNAME"),
+    repo_name=os.getenv("DAGSHUB_REPO")
+)
 
 class Model_Training:
     def __init__(self, data_transformation_artifacts: Data_Transformation_Artifacts, model_trainer_config: ModelTrainerConfig):

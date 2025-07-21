@@ -42,3 +42,6 @@ FILENAME = "Phishing_data.csv"
 
 TRAIN_FILE_NAME = "train.csv"
 TEST_FILE_NAME = "test.csv"
+
+
+TRAINING_BUCKET_NAME = "networksecuritybuck"

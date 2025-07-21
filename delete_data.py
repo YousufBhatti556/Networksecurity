@@ -21,3 +21,6 @@ collection = db["NETWORKDATA"]
 delete_result = collection.delete_many({})  # {} means delete everything
 
 print(f"Deleted {delete_result.deleted_count} documents.")
+# import dagshub
+# print(dagshub.__file__)
+
