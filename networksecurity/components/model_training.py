@@ -118,6 +118,7 @@ class Model_Training:
             network_model_instance = NetworkModelClass(preprocessor=preprocessor, model=best_model)
             save_obj_to_pickle_file(self.model_trainer_config.model_trainer_trained_model_path, obj=network_model_instance)
 
+            
             return Model_Trainer_Artifacts(
                 trained_model_file_path=self.model_trainer_config.model_trainer_trained_model_path,
                 train_metric_artifact=classification_train_metric,

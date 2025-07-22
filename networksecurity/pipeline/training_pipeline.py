@@ -88,8 +88,8 @@ class Training_Pipeline:
             data_validation_artifacts = self.start_data_validation(data_ingestion_artifacts=data_ingestion_artifacts)
             data_transformation_artifacts = self.start_data_transformation(data_validation_artifacts=data_validation_artifacts)
             model_trainer_artifacts = self.start_model_training(data_transformation_artifacts=data_transformation_artifacts)
-            # self.sync_artifact_dir_to_s3()
-            # self.sync_saved_model_dir_to_s3()
+            self.sync_artifact_dir_to_s3()
+            self.sync_saved_model_dir_to_s3()
             return model_trainer_artifacts
         except Exception as e:
             logging.info(NetworkSecurityException(e, sys))
