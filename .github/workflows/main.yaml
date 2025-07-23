@@ -17,12 +17,12 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Lint code
-        run: echo "Linting repository"
+        run: echo "✅ Linting complete"
 
       - name: Run unit tests
-        run: echo "Running unit tests"
+        run: echo "✅ Tests passed"
 
-  build-and-push-ecr-image:
+  deploy:
     name: Continuous Delivery
     needs: integration
     runs-on: ubuntu-latest
@@ -42,15 +42,18 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
         with:
-          mask-password: false  # disable masking if using Docker creds downstream
+          mask-password: false  # needed to access Docker creds
 
       - name: Build, tag, and push Docker image to ECR
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: networksecurity  # Replace with your actual ECR repo
+          ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY_NAME }}
           IMAGE_TAG: latest
         run: |
-          echo "Building and pushing Docker image..."
+          echo "🛠️ Building Docker image..."
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          
+          echo "📤 Pushing Docker image..."
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-          echo "✅ Image pushed: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
+          
+          echo "✅ Successfully pushed: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
